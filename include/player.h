@@ -9,7 +9,7 @@ private:
     Position position;
 
 public:
-    Player(char glyph, Position position);
+    Player(char glyph, const Position& position);
     Position getPosition();
 };
 

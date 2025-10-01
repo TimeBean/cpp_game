@@ -1,11 +1,11 @@
 #include "../include/player.h"
 #include <iostream>
 
-Player::Player(char glyph, Position position){
-  this->glyph = glyph;
-  this->position = position;
+Player::Player(char glyph, const Position& pos)
+    : glyph(glyph), position(pos)
+{
 }
 
-Position getPosition(){
+Position Player::getPosition(){
   return position;
 }
